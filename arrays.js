@@ -1,4 +1,5 @@
 'use strict';
+let age = new Date().getFullYear() - 1992;
 // Array
 // let x;
 // // Array Literal
@@ -85,3 +86,59 @@ x = result;
 
 console.log(result);
 console.log(x);
+
+// Creating an object
+
+const person = {
+  name: 'Monirul',
+  age: age,
+  isAdmin: true,
+  address: {
+    street: '123 Kailla Bhatta',
+    city: 'Ghaziabad',
+    state: 'UP',
+  },
+  hobbies: ['Cricket', 'Footbal'],
+  greet: function () {
+    let message;
+    return (message = `Hello, My name is ${this.name}`);
+  },
+};
+const message = person.greet();
+
+x = person;
+x = person.name;
+x = person['age'];
+x = person.address.city;
+person.hobbies[2] = 'Computer';
+x = person.hobbies;
+x = person.name = 'Rohit';
+x = person;
+x = person.isAdmin;
+const personCopy = person;
+x = person.greet();
+// delete person.hobbies[2]
+// console.log(personCopy);
+
+delete person.age;
+x = person;
+person.hasChildren = true;
+person.newGreet = function () {
+  let message;
+  return (message = `My hobbies are ${this.hobbies}`);
+};
+
+x = person.newGreet();
+
+const person2 = {
+  'first Name': 'Monirul',
+  'last Name': 'Khan',
+  fullName: function () {
+    return console.log(`My full name is ${this['first Name']} ${this['last Name']}`);
+  },
+};
+person2.fullName();
+x = person2.fullName;
+
+console.log(x);
+// console.log(person);
