@@ -74,7 +74,7 @@ const arr = [1, 2, 3, 4, 5];
 arr.push(6);
 arr.unshift(0);
 arr.reverse();
-console.log(arr);
+// console.log(arr);
 
 // Challenge 2
 const arr1 = [1, 2, 3, 4, 5];
@@ -84,8 +84,8 @@ const result = [...arr1, ...arr2];
 x = result.splice(4, 1);
 x = result;
 
-console.log(result);
-console.log(x);
+// console.log(result);
+// console.log(x);
 
 // Creating an object
 
@@ -130,7 +130,7 @@ person.newGreet = function () {
 
 x = person.newGreet();
 
-const person2 = {
+/* const person2 = {
   'first Name': 'Monirul',
   'last Name': 'Khan',
   fullName: function () {
@@ -138,7 +138,60 @@ const person2 = {
   },
 };
 person2.fullName();
-x = person2.fullName;
+x = person2.fullName; */
 
-console.log(x);
+// console.log(x);
 // console.log(person);
+
+// Create object using the object constructor
+const todo = new Object();
+todo.id = 1;
+todo.name = 'Monirul';
+todo.isValide = false;
+
+x = todo;
+
+// Object Nesting
+const person1 = {
+  address: {
+    state: 'UP',
+    city: 'Ghaziabad',
+    cords: {
+      lat: 12.12340101,
+      lan: 23.234566,
+    },
+  },
+};
+
+x = person1;
+x = person1.address.cords.lat;
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+
+const speardOperator = { ...obj1, ...obj2 };
+x = speardOperator;
+
+const obj3 = Object.assign({ familyName: 'Khan', members: 19 }, obj2);
+x = obj3;
+
+// Array of objects
+const todos = [
+  {
+    id: 1,
+    name: 'Water',
+  },
+  { id: 2, name: 'Milk' },
+];
+x = todos;
+x = todos[1].name;
+
+// Get array object keys
+
+x = Object.keys(todos);
+x = Object.keys(todos).length;
+x = Object.values(todos);
+x = Object.entries(todos);
+x = todo.hasOwnProperty('isValide');
+// x = todo;
+console.log(x);
