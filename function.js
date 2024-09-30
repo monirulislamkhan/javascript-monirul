@@ -101,3 +101,54 @@
 //   var c = 456;
 // }
 // console.log(c);
+
+// const run = () => {
+//   var d = 100;
+//   return d;
+//   console.log(d);
+// };
+
+// console.log(run());
+// console.log(d);
+
+// function first() {
+//   const x = 100;
+//   function second() {
+//     const y = 3000;
+//     console.log(x + y);
+//   }
+//   second();
+// }
+// first();
+
+// const res = 100;
+// if (res === 100) {
+//   const x = 10;
+//   if (x === 10) {
+//     const y = 34567;
+//     console.log(x + y);
+//   }
+//   console.log(y);
+// }
+
+// function Declaration
+// function addDollarSign(value) {
+//   return '$' + value;
+// }
+// console.log(addDollarSign(193));
+
+// function addPlusSign(value) {
+//   return '+' + value;
+// }
+// console.log(addPlusSign(12));
+
+// Arrow function
+// const add = (c) => c;
+// console.log(add(12));
+
+// const add = (a, b) => {
+//   return a + b;
+// };
+
+// const add = (a, b) => a + b;
+// console.log(add(2, 5));
