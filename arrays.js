@@ -144,121 +144,121 @@ x = person2.fullName; */
 // console.log(person);
 
 // Create object using the object constructor
-const todo = new Object();
-todo.id = 1;
-todo.name = 'Monirul';
-todo.isValide = false;
+// const todo = new Object();
+// todo.id = 1;
+// todo.name = 'Monirul';
+// todo.isValide = false;
 
-x = todo;
-
-// Object Nesting
-const person1 = {
-  address: {
-    state: 'UP',
-    city: 'Ghaziabad',
-    cords: {
-      lat: 12.12340101,
-      lan: 23.234566,
-    },
-  },
-};
-
-x = person1;
-x = person1.address.cords.lat;
-
-const obj1 = { a: 1, b: 2 };
-const obj2 = { c: 3, d: 4 };
-
-const speardOperator = { ...obj1, ...obj2 };
-x = speardOperator;
-
-const obj3 = Object.assign({ familyName: 'Khan', members: 19 }, obj2);
-x = obj3;
-
-// Array of objects
-const todos = [
-  {
-    id: 1,
-    name: 'Water',
-  },
-  { id: 2, name: 'Milk' },
-];
-x = todos;
-x = todos[1].name;
-
-// Get array object keys
-
-x = Object.keys(todos);
-x = Object.keys(todos).length;
-x = Object.values(todos);
-x = Object.entries(todos);
-x = todo.hasOwnProperty('isValide');
 // x = todo;
 
-// Setting object properties with the same name as a variable
-const firstName = 'Monirul';
-const lastName = 'Khan';
-const age1 = age;
+// // Object Nesting
+// const person1 = {
+//   address: {
+//     state: 'UP',
+//     city: 'Ghaziabad',
+//     cords: {
+//       lat: 12.12340101,
+//       lan: 23.234566,
+//     },
+//   },
+// };
 
-const person3 = {
-  firstName,
-  lastName,
-  age1,
-};
-x = person3;
-x = person3.age1;
-const tod = {
-  id: 10,
-  title: 'New Todos',
-  user: {
-    name: 'Monirul',
-  },
-};
-x = tod;
+// x = person1;
+// x = person1.address.cords.lat;
 
-const {
-  id: idTod,
-  title,
-  user: { name },
-} = tod;
+// const obj1 = { a: 1, b: 2 };
+// const obj2 = { c: 3, d: 4 };
 
-x = name;
+// const speardOperator = { ...obj1, ...obj2 };
+// x = speardOperator;
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-const [a, b, c, ...rest] = numbers;
-x = [a, b, ...rest];
+// const obj3 = Object.assign({ familyName: 'Khan', members: 19 }, obj2);
+// x = obj3;
 
-const library = [
-  {
-    title: 'The Road Ahead',
-    author: 'Bill Gates',
-    status: {
-      own: true,
-      reading: false,
-      read: false,
-    },
-  },
-  {
-    title: 'Steve Jobs',
-    author: 'Walter Isaacson',
-    status: {
-      own: true,
-      reading: false,
-      read: false,
-    },
-  },
-  {
-    title: 'Mockingjay',
-    author: 'Suzanne Collins',
-    status: {
-      own: true,
-      reading: false,
-      read: false,
-    },
-  },
-];
+// // Array of objects
+// const todos = [
+//   {
+//     id: 1,
+//     name: 'Water',
+//   },
+//   { id: 2, name: 'Milk' },
+// ];
+// x = todos;
+// x = todos[1].name;
 
-// x = library[0].status.read;
-x = JSON.stringify(library);
+// // Get array object keys
 
-console.log(x);
+// x = Object.keys(todos);
+// x = Object.keys(todos).length;
+// x = Object.values(todos);
+// x = Object.entries(todos);
+// x = todo.hasOwnProperty('isValide');
+// // x = todo;
+
+// // Setting object properties with the same name as a variable
+// const firstName = 'Monirul';
+// const lastName = 'Khan';
+// const age1 = age;
+
+// const person3 = {
+//   firstName,
+//   lastName,
+//   age1,
+// };
+// x = person3;
+// x = person3.age1;
+// const tod = {
+//   id: 10,
+//   title: 'New Todos',
+//   user: {
+//     name: 'Monirul',
+//   },
+// };
+// x = tod;
+
+// const {
+//   id: idTod,
+//   title,
+//   user: { name },
+// } = tod;
+
+// x = name;
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// const [a, b, c, ...rest] = numbers;
+// x = [a, b, ...rest];
+
+// const library = [
+//   {
+//     title: 'The Road Ahead',
+//     author: 'Bill Gates',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+//   {
+//     title: 'Steve Jobs',
+//     author: 'Walter Isaacson',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+//   {
+//     title: 'Mockingjay',
+//     author: 'Suzanne Collins',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+// ];
+
+// // x = library[0].status.read;
+// x = JSON.stringify(library);
+
+// console.log(x);

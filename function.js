@@ -152,3 +152,75 @@
 
 // const add = (a, b) => a + b;
 // console.log(add(2, 5));
+
+// IFFE syntax (Has it's own scope and runs right away)
+// const user = 'Monirul';
+// console.log(user);
+// (function () {
+//   const user = 'Musharraf';
+//   console.log(user);
+//   const hello = () => console.log('Hello from the IIFE');
+//   hello();
+// })();
+
+// // IIFE params
+// (function (name) {
+//   return console.log(`Hello ${name}`);
+// })('Monirul');
+
+// (function hello() {
+//   console.log('Hello');
+// })();
+
+// const getCelsius = (f) => {
+//   const celsius = ((f - 32) * 5) / 9;
+//   return celsius;
+// };
+
+// Farenheit to celsius
+// const getCelsius = (f) => ((f - 32) * 5) / 9;
+// console.log(getCelsius(35).toFixed(2));
+
+// Celsius to farenheit
+// const getFarenheit = (c) => c * (9 / 5) + 32;
+// console.log(getFarenheit(32));
+
+// const minMax = (arr) => {
+//   const min = Math.min(...arr);
+//   const max = Math.max(...arr);
+
+//   return 'Min Value is: ' + min + ' Max Value is: ' + max;
+// };
+// console.log(minMax([12, 5, 8, 99, 52, 30, 21, 3, -2, 12345678]));
+
+// ((length, width) => {
+//   const area = length * width;
+//   const output = `${area}`;
+//   console.log(output)
+// })(10, 18);
+
+// const c = 100;
+// const d = 50;
+// function getSum(n1, n2) {
+//   const sum = n1 + n2;
+//   return sum;
+// }
+// const sum1 = getSum(c, d);
+// const sum2 = getSum(10, 4);
+// console.log(sum1, sum2);
+
+function first() {
+  console.log('first...');
+  second();
+}
+
+function second() {
+  console.log('second...');
+  third();
+}
+
+function third() {
+  console.log('third...');
+}
+
+first();
