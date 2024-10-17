@@ -57,5 +57,18 @@ output = document.links[0].id = 'google-link';
 
 // output = document.links[0].className = 'nirul';
 output = document.links[0].classList;
+// Get all images
+output = document.images;
+output = document.images.length;
+// output = document.__proto__;
+// output = document.images;
+const allImages = document.images;
+const forms = Array.from(allImages);
+
+forms.forEach((element) => {
+  console.log(element.URL);
+});
+
+console.log(allImages);
 
 console.log(output);
