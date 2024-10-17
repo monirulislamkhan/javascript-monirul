@@ -144,6 +144,7 @@ console.log(x);
 // // console.log(person);
 
 // // Create object using the object constructor
+// Create object using the object constructor
 // const todo = new Object();
 // todo.id = 1;
 // todo.name = 'Monirul';
@@ -272,3 +273,78 @@ for (let i = 0; i < data.length; i += chunkSize) {
   console.log(i);
 }
 console.log(slicedArrays); */
+
+// // Get array object keys
+
+// x = Object.keys(todos);
+// x = Object.keys(todos).length;
+// x = Object.values(todos);
+// x = Object.entries(todos);
+// x = todo.hasOwnProperty('isValide');
+// // x = todo;
+
+// // Setting object properties with the same name as a variable
+// const firstName = 'Monirul';
+// const lastName = 'Khan';
+// const age1 = age;
+
+// const person3 = {
+//   firstName,
+//   lastName,
+//   age1,
+// };
+// x = person3;
+// x = person3.age1;
+// const tod = {
+//   id: 10,
+//   title: 'New Todos',
+//   user: {
+//     name: 'Monirul',
+//   },
+// };
+// x = tod;
+
+// const {
+//   id: idTod,
+//   title,
+//   user: { name },
+// } = tod;
+
+// x = name;
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// const [a, b, c, ...rest] = numbers;
+// x = [a, b, ...rest];
+
+// const library = [
+//   {
+//     title: 'The Road Ahead',
+//     author: 'Bill Gates',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+//   {
+//     title: 'Steve Jobs',
+//     author: 'Walter Isaacson',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+//   {
+//     title: 'Mockingjay',
+//     author: 'Suzanne Collins',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+// ];
+
+// x = JSON.stringify(library);
+// console.log(x);
