@@ -68,81 +68,82 @@ console.log(x);
 
 */
 
-let x;
-// Challeng 1
-const arr = [1, 2, 3, 4, 5];
-arr.push(6);
-arr.unshift(0);
-arr.reverse();
-// console.log(arr);
+// let x;
+// // Challeng 1
+// const arr = [1, 2, 3, 4, 5];
+// arr.push(6);
+// arr.unshift(0);
+// arr.reverse();
+// // console.log(arr);
 
-// Challenge 2
-const arr1 = [1, 2, 3, 4, 5];
-const arr2 = [5, 6, 7, 8, 9, 10];
-const result = [...arr1, ...arr2];
+// // Challenge 2
+// const arr1 = [1, 2, 3, 4, 5];
+// const arr2 = [5, 6, 7, 8, 9, 10];
+// const result = [...arr1, ...arr2];
 
-x = result.splice(4, 1);
-x = result;
+// x = result.splice(4, 1);
+// x = result;
 
-// console.log(result);
-// console.log(x);
+// // console.log(result);
+// // console.log(x);
 
-// Creating an object
+// // Creating an object
 
-const person = {
-  name: 'Monirul',
-  age: age,
-  isAdmin: true,
-  address: {
-    street: '123 Kailla Bhatta',
-    city: 'Ghaziabad',
-    state: 'UP',
-  },
-  hobbies: ['Cricket', 'Footbal'],
-  greet: function () {
-    let message;
-    return (message = `Hello, My name is ${this.name}`);
-  },
-};
-const message = person.greet();
+// const person = {
+//   name: 'Monirul',
+//   age: age,
+//   isAdmin: true,
+//   address: {
+//     street: '123 Kailla Bhatta',
+//     city: 'Ghaziabad',
+//     state: 'UP',
+//   },
+//   hobbies: ['Cricket', 'Footbal'],
+//   greet: function () {
+//     let message;
+//     return (message = `Hello, My name is ${this.name}`);
+//   },
+// };
+// const message = person.greet();
 
-x = person;
-x = person.name;
-x = person['age'];
-x = person.address.city;
-person.hobbies[2] = 'Computer';
-x = person.hobbies;
-x = person.name = 'Rohit';
-x = person;
-x = person.isAdmin;
-const personCopy = person;
-x = person.greet();
-// delete person.hobbies[2]
-// console.log(personCopy);
+// x = person;
+// x = person.name;
+// x = person['age'];
+// x = person.address.city;
+// person.hobbies[2] = 'Computer';
+// x = person.hobbies;
+// x = person.name = 'Rohit';
+// x = person;
+// x = person.isAdmin;
+// const personCopy = person;
+// x = person.greet();
+// // delete person.hobbies[2]
+// // console.log(personCopy);
 
-delete person.age;
-x = person;
-person.hasChildren = true;
-person.newGreet = function () {
-  let message;
-  return (message = `My hobbies are ${this.hobbies}`);
-};
+// delete person.age;
+// x = person;
+// person.hasChildren = true;
+// person.newGreet = function () {
+//   let message;
+//   return (message = `My hobbies are ${this.hobbies}`);
+// };
 
-x = person.newGreet();
+// x = person.newGreet();
 
-/* const person2 = {
-  'first Name': 'Monirul',
-  'last Name': 'Khan',
-  fullName: function () {
-    return console.log(`My full name is ${this['first Name']} ${this['last Name']}`);
-  },
-};
-person2.fullName();
-x = person2.fullName; */
+// /* const person2 = {
+//   'first Name': 'Monirul',
+//   'last Name': 'Khan',
+//   fullName: function () {
+//     return console.log(`My full name is ${this['first Name']} ${this['last Name']}`);
+//   },
+// };
+// person2.fullName();
+// x = person2.fullName; */
 
-// console.log(x);
-// console.log(person);
+// // console.log(x);
+// // console.log(person);
 
+// // Create object using the object constructor
 // Create object using the object constructor
 // const todo = new Object();
 // todo.id = 1;
@@ -258,7 +259,92 @@ x = person2.fullName; */
 //   },
 // ];
 
-// // x = library[0].status.read;
+// x = library[0].status.read;
 // x = JSON.stringify(library);
 
+// console.log(x);
+
+/* let data = Array.from({ length: 53 }, (_, i) => i + 1);
+let chunkSize = 5;
+let slicedArrays = [];
+for (let i = 0; i < data.length; i += chunkSize) {
+  let chunk = data.slice(i, i + chunkSize);
+  slicedArrays.push(chunk);
+  console.log(i);
+}
+console.log(slicedArrays); */
+
+// // Get array object keys
+
+// x = Object.keys(todos);
+// x = Object.keys(todos).length;
+// x = Object.values(todos);
+// x = Object.entries(todos);
+// x = todo.hasOwnProperty('isValide');
+// // x = todo;
+
+// // Setting object properties with the same name as a variable
+// const firstName = 'Monirul';
+// const lastName = 'Khan';
+// const age1 = age;
+
+// const person3 = {
+//   firstName,
+//   lastName,
+//   age1,
+// };
+// x = person3;
+// x = person3.age1;
+// const tod = {
+//   id: 10,
+//   title: 'New Todos',
+//   user: {
+//     name: 'Monirul',
+//   },
+// };
+// x = tod;
+
+// const {
+//   id: idTod,
+//   title,
+//   user: { name },
+// } = tod;
+
+// x = name;
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// const [a, b, c, ...rest] = numbers;
+// x = [a, b, ...rest];
+
+// const library = [
+//   {
+//     title: 'The Road Ahead',
+//     author: 'Bill Gates',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+//   {
+//     title: 'Steve Jobs',
+//     author: 'Walter Isaacson',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+//   {
+//     title: 'Mockingjay',
+//     author: 'Suzanne Collins',
+//     status: {
+//       own: true,
+//       reading: false,
+//       read: false,
+//     },
+//   },
+// ];
+
+// x = JSON.stringify(library);
 // console.log(x);
