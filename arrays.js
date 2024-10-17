@@ -263,15 +263,12 @@ console.log(x);
 
 // console.log(x);
 
-let data = Array.from({ length: 53 }, (_, i) => i + 1); // Example array with 50 items (1 to 50)
-
-let chunkSize = 5; // Define how many items you want in each chunk
+/* let data = Array.from({ length: 53 }, (_, i) => i + 1);
+let chunkSize = 5;
 let slicedArrays = [];
-
 for (let i = 0; i < data.length; i += chunkSize) {
-  // let chunk = data.slice(i, i + chunkSize); // Slice the array every 5 items
-  // slicedArrays.push(chunk); // Push each chunk into the slicedArrays array
+  let chunk = data.slice(i, i + chunkSize);
+  slicedArrays.push(chunk);
   console.log(i);
 }
-
-console.log(slicedArrays);
+console.log(slicedArrays); */
