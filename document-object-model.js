@@ -26,7 +26,7 @@
 // console.log(document.querySelectorAll('*').length);
 let output;
 // Everything in all html tags
-output = document.head;
+/* output = document.head;
 output = document.body;
 
 output = document.head.children;
@@ -71,4 +71,28 @@ forms.forEach((element) => {
 
 console.log(allImages);
 
-console.log(output);
+*/
+// console.log(document.getElementById('app-title'));
+// Get attribute
+const title = document.getElementById('app-title');
+output = title.id;
+output = title.className;
+output = title.getAttribute('id');
+
+// Set attribute
+output = title.title = 'Shoping List';
+title.setAttribute('class', 'title');
+output = title;
+
+// Get/ Change content
+output = title.textContent = 'textContent';
+output = title.innerText = 'innerText';
+output = title.innerHTML = 'innerHTML';
+output = title.outerHTML;
+
+// change style
+output = title.style.color = '#234591';
+output = title.style.backgroundColor = 'blue';
+output = title.style.padding = '20px';
+// output = title.style.transform = 'translateY(-42px)';
+output = title.style.console.log(output);
