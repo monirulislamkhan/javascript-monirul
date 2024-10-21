@@ -74,7 +74,7 @@ console.log(allImages);
 */
 // console.log(document.getElementById('app-title'));
 // Get attribute
-const title = document.getElementById('app-title');
+/* const title = document.getElementById('app-title');
 output = title.id;
 output = title.className;
 output = title.getAttribute('id');
@@ -82,17 +82,136 @@ output = title.getAttribute('id');
 // Set attribute
 output = title.title = 'Shoping List';
 title.setAttribute('class', 'title');
-output = title;
+output = title; */
 
 // Get/ Change content
-output = title.textContent = 'textContent';
-output = title.innerText = 'innerText';
-output = title.innerHTML = 'innerHTML';
-output = title.outerHTML;
+// output = title.textContent = 'textContent';
+// output = title.innerText = 'innerText';
+// output = title.innerHTML = 'innerHTML';
+// output = title.outerHTML;
 
 // change style
-output = title.style.color = '#234591';
-output = title.style.backgroundColor = 'blue';
-output = title.style.padding = '20px';
+// output = title.style.color = '#234591';
+// output = title.style.backgroundColor = 'blue';
+// output = title.style.padding = '20px';
 // output = title.style.transform = 'translateY(-42px)';
-output = title.style.console.log(output);
+// output = title.style.
+
+//Query Selector
+/* const query = document.querySelector('h1');
+output = query;
+const allinputs = document.querySelectorAll('input[type="text"]');
+// const inputs = document.querySelector('input[type="text"]');
+for (let i = 0; i < allinputs.length; i++) {
+  // output += allinputs[i];
+  // output = allinputs[i];
+  console.log(allinputs[i]);
+} */
+// output = allinputs;
+// // output = inputs;
+
+// const listItem = document.querySelector('li:nth-child(4)');
+// output = listItem.innerHTML;
+
+// Query Selector all
+/* const listItems = document.querySelectorAll('.item');
+output = listItems.forEach((item, index) => {
+  if (index == 1) {
+    item.innerText = 'Hello';
+  }
+  console.log(item.innerText);
+});
+output = listItems; */
+
+// const listItems = document.querySelectorAll('.item');
+// output = listItems.forEach((item, index) => {
+//   if (index == 1) {
+//     item.innerText = 'Hello';
+//   }
+//   if (index === 2) {
+//     item.remove();
+//   }
+//   console.log(item.innerHTML);
+// });
+// output = listItems;
+
+// const listItem2 = document.getElementsByClassName('item');
+// output = listItem2;
+// // console.log(output[2].outerHTML);
+// output = Array.from(listItem2);
+// output.forEach((item, index) => {
+//   console.log(item);
+// });
+
+// Get child element from parent
+// const parent = document.querySelector('.parent');
+
+// output = parent.children;
+
+// const div = document.createElement('div');
+// div.className = 'my-element';
+// div.id = 'my-element';
+// div.setAttribute('id', 'new');
+// const text = document.createTextNode('Hello World');
+
+// output = div.appendChild(text);
+// div.appendChild(text);
+// output = document.querySelector('ul').appendChild(div);
+
+// function createListItem(item) {
+//   const li = document.createElement('li');
+//   li.className = 'item';
+//   li.innerHTML = `${item} <button class="remove-item btn-link text-red">
+//             <i class="fa-solid fa-xmark"></i>
+//           </button>`;
+//   document.querySelector('.items').append(li);
+// }
+// createListItem('Mango');
+
+// const createListItems1 = (item) => {
+//   const li = document.createElement('li');
+//   li.appendChild(document.createTextNode(item));
+
+//   // Button
+//   const button = document.createElement('button');
+//   button.className = 'remove-item btn-link text-red';
+
+//   // Close icon
+//   const icon = document.createElement('i');
+//   icon.className = 'fa-solid fa-xmark';
+
+//   // Appendchild
+//   button.appendChild(icon);
+//   li.appendChild(button);
+
+//   button.appendChild(icon);
+//   document.querySelector('ul').append(li);
+// };
+
+// createListItems1('Some value');
+// createListItems1('Some value');
+
+// console.log(res);
+
+// Refactor
+
+const createList = (item) => {
+  const li = document.createElement('li');
+  li.appendChild(document.createTextNode(item));
+};
+
+// button Function
+const createButton = (classes) => {
+  const button = document.createElement('button');
+  button.className = classes;
+};
+
+// Create Icon
+const createIcon = (classes) => {
+  const icon = document.createElement('li');
+  icon.classes = classes;
+};
+
+createList('Lemon');
+
+// console.log(output);
