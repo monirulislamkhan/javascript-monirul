@@ -194,24 +194,67 @@ output = listItems; */
 // console.log(res);
 
 // Refactor
+// const createList = (item) => {
+//   const li = document.createElement('li');
+//   li.textContent = item;
 
-const createList = (item) => {
-  const li = document.createElement('li');
-  li.appendChild(document.createTextNode(item));
-};
+//   const btn = createButton('remove-item btn-link text-red');
+//   li.append(btn);
 
-// button Function
-const createButton = (classes) => {
-  const button = document.createElement('button');
-  button.className = classes;
-};
+//   const newListItem = document.querySelector('.items').appendChild(li);
+//   return newListItem;
+// };
 
-// Create Icon
-const createIcon = (classes) => {
-  const icon = document.createElement('li');
-  icon.classes = classes;
-};
+// const createButton = (className) => {
+//   const button = document.createElement('button');
+//   button.className = className;
 
-createList('Lemon');
+//   const icon = iconFun('fa-solid fa-xmark');
+//   button.appendChild(icon);
+//   return button;
+// };
 
-// console.log(output);
+// const iconFun = (className) => {
+//   const icon = document.createElement('i');
+//   icon.className = className;
+//   return icon;
+// };
+
+// console.log(createList('Lemon'));
+// createList('Lemon');
+
+// insertAdjacentElement
+// const insertAdjacentElement = () => {
+//   const filter = document.querySelector('.filter');
+//   const h1 = document.querySelector('h1');
+//   h1.textContent = 'insertAdjacentElement';
+
+//   filter.insertAdjacentElement('afterend', h1);
+
+//   console.log(filter);
+// };
+
+// insertAdjacentElement();
+
+// Child to parent
+// const child = document.querySelector('.child');
+// const secondChild = document.querySelector('.child:nth-child(2)');
+// // child.style.border = 'red 1px solid';
+// // child.parentElement;
+// // output = child.parentElement;
+// output = child.textContent = 'First Child';
+// output = child.style.color = 'red';
+// // Second
+// output = child.nextElementSibling.textContent = 'Second child';
+// output = child.nextElementSibling.style.color = 'green';
+
+// // Third child
+// output = secondChild.nextElementSibling.textContent = 'Third Child';
+// output = secondChild.nextElementSibling.style.color = '#884741';
+
+const parent = document.querySelector('.parent');
+// output = parent.childNodes;
+output = parent.childNodes[0];
+// output = parent.lastChild.previousElementSibling.textContent;
+
+console.log(parent.childNodes, output);
