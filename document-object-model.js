@@ -80,7 +80,7 @@ output = title.className;
 output = title.getAttribute('id');
 
 // Set attribute
-output = title.title = 'Shoping List';
+/* output = title.title = 'Shoping List';
 title.setAttribute('class', 'title');
 output = title;
 
@@ -94,5 +94,6 @@ output = title.outerHTML;
 output = title.style.color = '#234591';
 output = title.style.backgroundColor = 'blue';
 output = title.style.padding = '20px';
-// output = title.style.transform = 'translateY(-42px)';
-output = title.style.console.log(output);
+// output = title.style.transform = 'translateY(-42px)'; */
+// output = title.style
+console.log(output);
