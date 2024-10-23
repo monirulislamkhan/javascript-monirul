@@ -252,9 +252,9 @@ output = listItems; */
 // output = secondChild.nextElementSibling.textContent = 'Third Child';
 // output = secondChild.nextElementSibling.style.color = '#884741';
 
-const parent = document.querySelector('.parent');
-// output = parent.childNodes;
-output = parent.childNodes[0];
-// output = parent.lastChild.previousElementSibling.textContent;
+// const parent = document.querySelector('.parent');
+// // output = parent.childNodes;
+// output = parent.childNodes[0];
+// // output = parent.lastChild.previousElementSibling.textContent;
 
-console.log(parent.childNodes, output);
+// console.log(parent.childNodes, output);
