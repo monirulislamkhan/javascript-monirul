@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Count Up</title>
+  </head>
+  <body>
+    <ul id="countList">
+      <li data-target="50">0</li>
+      <li data-target="75">0</li>
+      <li data-target="100">0</li>
+    </ul>
+
+    <script>
+      // Function to animate count up
+      function animateCountUp(element, target, duration = 2000) {
+        const start = 0;
+        const startTime = performance.now();
+
+        function updateCount(currentTime) {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const currentValue = Math.floor(progress * (target - start) + start);
+
+          element.textContent = currentValue;
+
+          // Continue the animation if not completed
+          if (progress < 1) {
+            requestAnimationFrame(updateCount);
+          }
+        }
+
+        requestAnimationFrame(updateCount);
+      }
+
+      // Select list items and apply count up animation
+      document.querySelectorAll('#countList li').forEach((item) => {
+        const target = parseInt(item.getAttribute('data-target'), 10);
+        animateCountUp(item, target);
+      });
+    </script>
+  </body>
+</html>

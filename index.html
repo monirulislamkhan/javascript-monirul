@@ -4,14 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
+    <style>
+      .contacted {
+        background-color: #1d4ed8;
+        color: white;
+      }
+
+      .qualified {
+        background-color: #86efac;
+      }
+      .proposal-sent {
+        background-color: #7e22ce;
+        color: white;
+      }
+
+      select option:focus {
+        background-color: #d8b4fe;
+      }
+
+      #colorSelector option:nth-of-type(2) {
+        background-color: #93c5fd;
+      }
+
+      #colorSelector option:nth-of-type(3) {
+        background-color: #67e8f9;
+      }
+      #colorSelector option:nth-of-type(4) {
+        background-color: #d8b4fe;
+      }
+      #colorSelector option:nth-of-type(5) {
+        background-color: #dff0d8;
+      }
+      #colorSelector option:nth-of-type(6) {
+        background-color: #f2dede;
+      }
+
+      /* option {
+        background-color: white;
+        color: black;
+      } */
+
+      /* #colorSelector option:nth-of-type(3) {
+        background-color: red;
+      }
+      #colorSelector option:nth-of-type(3):hover {
+        background-color: red;
+      } */
+    </style>
   </head>
   <body>
     <!-- <div class="container">
@@ -29,8 +76,30 @@
     <!-- <script src="./logic-control-flow.js"></script> -->
     <!-- <script src="./iteration-array-methods.js"></script> -->
     <!-- <script src="./document-object-model.js"></script> -->
-    <script src="./challenges.js"></script>
-    <script src="./document-object-model.js"></script>
-    <script src="/js/challenges1.js"></script>
+
+    <select id="colorSelector">
+      <option value="">[ ] 20% - Open</option>
+      <option value="">[ ] 40% - Contacted</option>
+      <option value="">[ ] 60% - Qualified</option>
+      <option value="">[ ] 80% - Proposal Sent</option>
+      <option value="">[ ] 100% - Done</option>
+      <option value="">[ ] 0% - Close</option>
+    </select>
+    <!-- <script src="./challenges.js"></script> -->
+    <!-- <script src="./document-object-model.js"></script> -->
+    <!-- <script src="/js/challenges1.js"></script> -->
+
+    <script>
+      /* const colorSelector = document.getElementById('colorSelector');
+      colorSelector.addEventListener('mouseover', function () {
+        for (let option of colorSelector.options) {
+          option.style.backgroundColor = '#d8b4fe';
+        }
+      }); */
+
+      // colorSelector.options[1].className = 'contacted';
+      // colorSelector.options[2].className = 'qualified';
+      // colorSelector.options[3].className = 'proposal-sent';
+    </script>
   </body>
 </html>
