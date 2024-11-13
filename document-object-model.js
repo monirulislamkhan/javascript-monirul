@@ -258,3 +258,32 @@ output = listItems; */
 // // output = parent.lastChild.previousElementSibling.textContent;
 
 // console.log(parent.childNodes, output);
+/* const childAdd = (addItem) => {
+  const parent = document.querySelector('.parent');
+  const child4 = document.createElement('div');
+  child4.className = 'child';
+  child4.innerText = addItem;
+  parent.appendChild(child4);
+};
+
+childAdd('Child 4');
+childAdd('Child 5');
+console.log(child4); */
+
+/* const createEl = (item) => {
+  const li = document.createElement('li');
+  li.innerHTML = `${item} <button class="remove-item btn-link text-red"><i class="fa-solid fa-xmark"></i></button>`;
+
+  document.querySelector('.items').appendChild(li);
+};
+
+createEl('Salt');
+createEl('Tomato');
+
+const createElNew = (item) => {
+  const li = document.createElement('li');
+  li.textContent = item;
+
+  document.querySelector('.items').appendChild(li);
+};
+createElNew('Tomato'); */
